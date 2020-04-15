@@ -22,7 +22,7 @@ public class MyToyTest {
     public void testSuccessfulCases(){
         //actual + call method
         assertEquals(1, cF(0));
-        assertEquals(6, cF(2));
+        assertEquals(2, cF(2));
         assertEquals(6, cF(3));
         assertEquals(24, cF(4));
         assertEquals(120, cF(5));
