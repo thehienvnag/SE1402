@@ -15,14 +15,16 @@ public class MyToys {
     public static long cF(int n){
         if(n < 0 || n > 15)
             throw new IllegalArgumentException("Sorry, n must be >= 0");
-        if(n == 0)
+        if(n == 0 || n == 1)
             return 1;
+        
+        return cF(n - 1) * n;
         //phan con lai la hop le
-        int product = 1;
-        for (int i = 1; i <= n; i++) {
-            product *= i;
-        }
-        return product;
+//        int product = 1;
+//        for (int i = 1; i <= n; i++) {
+//            product *= i;
+//        }
+//        return product;
     }
     //Moi doan code ban viet ra phai dam bao rang no co chat luong
     //Ham tra ve xu ly dung nhu ky vong
